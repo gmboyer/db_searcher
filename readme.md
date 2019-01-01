@@ -41,7 +41,7 @@ A browser tab should open automatically to display the Jupyter interface. Use th
 
 ## Tutorial with a test dataset
 
-**Reading Data** Type ```data``` into the 'csv:' text box, then click the Search button. This should read the sample dataset included with db_searcher called data.csv and then display the first and last 30 entries of data.csv, a sample dataset included in the download. You should see all five columns included in data.csv; Sample, Year, Loc, Temperature, and pH. The csv you choose to read in db_searcher needs to be in the same directory as db_searcher.ipynb.
+**Reading Data** Type ```water``` into the 'csv:' text box, then click the Search button. This should read the sample dataset included with db_searcher called water.csv and then display the first and last 30 entries of water.csv, a sample dataset included in the download. You should see all five columns included in water.csv; Sample, Year, Loc, Temperature, and pH. The csv you choose to read in db_searcher needs to be in the same directory as db_searcher.ipynb.
 
 **Selecting** Choose Select from the 'condition' dropdown menu, then click the Add button. This will add a Select line. You can remove a line you just added by clicking the Remove button next to the line. While you have a Select line added, type ```Year, Sample, pH, Temperature``` into the Select text box and then click Search. This will select only the Year, Sample, pH, and Temperature columns and display them in that order. Be aware that db_searcher is case-sensitive, so check that you have the correct uppercase and lowercase letters if something goes wrong.
 
@@ -53,7 +53,7 @@ Try adding another Filter line and then selecting only entries with the value 20
 
 **Plotting** Create a Plot line. Type ```pH, Temperature``` and click Search. This should display an xy-plot and a table of the filtered data.
 
-**Joining** Create a Join line. In the first box, type ```data2```, which is the name of the second sample csv dataset included with db_searcher. Leave the join type as 'Inner', and type ```Sample``` as the column used to perform the join. Click Search. This will display the result of the join. In this case, the "Eh" column from data2.csv should now appear as a column in the displayed table. The csv you choose to join must be in the same directory as db_searcher.ipynb.
+**Joining** Create a Join line. In the first box, type ```water2```, which is the name of the second sample csv dataset included with db_searcher. Leave the join type as 'Inner', and type ```Sample``` as the column used to perform the join. Click Search. This will display the result of the join. In this case, the "Eh" column from water2.csv should now appear as a column in the displayed table. The csv you choose to join must be in the same directory as db_searcher.ipynb.
 
 **Exporting** To export the displayed data table as a csv, first create an Export line and enter the name of the file you would like to export, then click Search. For instance, entering ```MyOutput``` will create MyOutput.csv in the same directory as db_searcher.ipynb.
 
