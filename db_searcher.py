@@ -123,15 +123,15 @@ def main():
         action = "data" # action starts with loaded csv contents 'data'
         for i in range(len(row_type_contents)):
             if row_type_contents[i] == 'Select':
-                selected_columns = ["X." + x.strip() for x in row_widget_contents[i].value.split(',')]
+                selected_columns = ["X['{0}']".format(x.strip()) for x in row_widget_contents[i].value.split(',')]
                 action = action + " >>  select(%s)" % ", ".join(selected_columns)
 
             if row_type_contents[i] == 'Sort':
-                selected_columns = ["X." + x.strip() for x in row_widget_contents[i].value.split(',')]
+                selected_columns = ["X['{0}']".format(x.strip()) for x in row_widget_contents[i].value.split(',')]
                 action = action + " >>  arrange(%s)" % ", ".join(selected_columns)
 
             if row_type_contents[i] == 'Filter':
-                action = action + " >>  mask(X.%s %s)" % (row_widget_contents[i].children[0].value, row_widget_contents[i].children[1].value)
+                action = action + " >>  mask(X['{0}'] {1})".format(row_widget_contents[i].children[0].value, row_widget_contents[i].children[1].value)
 
             if row_type_contents[i] == 'Join':
                 csv_to_join = pd.read_csv(row_widget_contents[i].children[0].value + '.csv')
@@ -174,7 +174,7 @@ def main():
         # if search result is flagged for export, export dataframe as a csv
         if flag_export:
             try:
-                eval(action).to_csv(export_filename + '.csv', sep=',', encoding = 'utf-8')
+                eval(action).to_csv(export_filename + '.csv', sep=',', encoding='utf-8', index=False)
             except:
                 clear_output(True)
                 display(widgets.VBox(row_widget_contents + [add_search_vbox]))

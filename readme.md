@@ -58,9 +58,6 @@ Try adding another Filter line and then selecting only entries with the value 20
 **Exporting** To export the displayed data table as a csv, first create an Export line and enter the name of the file you would like to export, then click Search. For instance, entering ```MyOutput``` will create MyOutput.csv in the same directory as db_searcher.ipynb.
 
 
-## Known Issues
-Column names must include only alphanumeric characters and underscores to be referenced properly in db_searcher.
-
 ## Author
 
 * **Grayson Boyer** - [gmboyer](https://github.com/gmboyer)
