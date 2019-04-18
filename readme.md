@@ -15,13 +15,7 @@ You will need Python 3.6 or higher installed on your machine. You will also need
 
 Click on the green button 'clone or download' and select 'download as ZIP'. When the download is finished, unzip the zipped 'db_searcher-master' folder somewhere.
 
-Check to make sure Python 3.6 or higher is installed on your machine. Next, check the list of prerequisites in the "Prerequisites" section, above. If you know these libraries are already installed, skip ahead to the "Tutorial" section. If not, open your computer's command line and install them using conda if you are using Anaconda:
-
-```
-conda install ipywidgets
-```
-
-or pip if you are not using Anaconda:
+Check to make sure Python 3.6 or higher is installed on your machine. Next, check the list of prerequisites in the "Prerequisites" section, above. If you know these libraries are already installed, skip ahead to the "Tutorial" section. If not, open your computer's command line and install them using pip:
 
 ```
 pip install ipywidgets
