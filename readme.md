@@ -4,7 +4,7 @@ This is a tool to take a large csv and filter it down based on the user's criter
 
 ### Prerequisites
 
-You will need Python 3.6 or higher installed on your machine. You will also need the following Python libraries:
+You will need Python 3.6 or higher installed on your machine. Anaconda is not supported at this time. You will also need the following Python libraries:
 
 - jupyter
 - ipywidgets
@@ -15,7 +15,7 @@ You will need Python 3.6 or higher installed on your machine. You will also need
 
 Click on the green button 'clone or download' and select 'download as ZIP'. When the download is finished, unzip the zipped 'db_searcher-master' folder somewhere.
 
-Check to make sure Python 3.6 or higher is installed on your machine. Next, check the list of prerequisites in the "Prerequisites" section, above. If you know these libraries are already installed, skip ahead to the "Tutorial" section. If not, open your computer's command line and install them using pip:
+Check to make sure Python 3.6 or higher is installed on your machine (Anaconda is not supported at this time). Next, check the list of prerequisites in the "Prerequisites" section, above. If you know these libraries are already installed, skip ahead to the "Tutorial" section. If not, open your computer's command line and install them using pip:
 
 ```
 pip install ipywidgets
