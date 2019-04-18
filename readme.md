@@ -25,7 +25,7 @@ Repeat this process until each of the prerequisite libraries is installed.
 
 ## How to open and run db_searcher
 
-Open Jupyter notebooks using Anaconda (if it is installed) or by opening your computer's command line interface and entering:
+Open Jupyter notebooks by opening your computer's command line interface and entering:
 
 ```
 jupyter notebook
